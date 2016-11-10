@@ -1,10 +1,10 @@
-# bookmark-local
+# pagemark
 
-Save the scrolled position of a page (like a bookmark for an article). Works with [localStorage](https://en.wikipedia.org/wiki/Web_storage), so it's per-device.
+Save the scrolled position of a page (like a bookmark for a page). Works with [localStorage](https://en.wikipedia.org/wiki/Web_storage), so it's per-device.
 
 ## Installation
 
-`$ npm install bookmark-local --save`
+`$ npm install pagemark --save`
 
 ## Usage
 

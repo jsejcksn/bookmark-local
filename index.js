@@ -1,28 +1,28 @@
 (() => {
   'use strict';
 
-  let bookmarkLocal;
+  let pagemark;
   init();
 
   // Scroll to saved position
-  function getBookmark () {
-    window.scrollTo(0, bookmarkLocal);
+  function getPagemark () {
+    window.scrollTo(0, pagemark);
   }
 
   // Add event listener; if possible, scroll to saved position
   function init () {
-    window.addEventListener('scroll', setBookmark);
-    bookmarkLocal = localStorage.getItem('bookmarkLocal');
-    if (bookmarkLocal !== null && typeof bookmarkLocal !== 'undefined' && bookmarkLocal !== '') { // localStorage key exists and not empty
-      getBookmark();
+    window.addEventListener('scroll', setPagemark);
+    pagemark = localStorage.getItem('pagemark');
+    if (pagemark !== null && typeof pagemark !== 'undefined' && pagemark !== '') { // localStorage key exists and not empty
+      getPagemark();
     } else {
       return;
     }
   }
 
   // Save scrolled posiiton
-  function setBookmark () {
-    localStorage.setItem('bookmarkLocal', document.body.scrollTop);
+  function setPagemark () {
+    localStorage.setItem('pagemark', document.body.scrollTop);
   }
 
 })();
