@@ -1,6 +1,6 @@
 {
   "name": "bookmark-local",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Save the scrolled position of a page (like a bookmark for an article)",
   "main": "index.js",
   "directories": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/jsejcksn/bookmark-local#readme",
   "devDependencies": {
-    "@jsejcksn/eslint-config": "^0.0.6",
+    "@jsejcksn/eslint-config": "^1.0.0",
     "eslint": "^3.9.1"
   }
 }
