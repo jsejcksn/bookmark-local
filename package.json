@@ -1,13 +1,14 @@
 {
   "name": "bookmark-local",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Save the scrolled position of a page (like a bookmark for an article)",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/.bin/eslint -c ./node_modules/@jsejcksn/eslint-config/index.js index.js"
+    "lint": "eslint -c @jsejcksn index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
