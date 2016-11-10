@@ -1,6 +1,6 @@
 {
   "name": "bookmark-local",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Save the scrolled position of a page (like a bookmark for an article)",
   "main": "index.js",
   "directories": {
