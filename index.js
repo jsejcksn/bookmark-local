@@ -9,7 +9,7 @@
     window.scrollTo(0, bookmarkLocal);
   }
 
-  // Scroll to saved position and
+  // Add event listener; if possible, scroll to saved position
   function init () {
     window.addEventListener('scroll', setBookmark);
     bookmarkLocal = localStorage.getItem('bookmarkLocal');
