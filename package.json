@@ -1,7 +1,7 @@
 {
-  "name": "bookmark-local",
-  "version": "1.0.3",
-  "description": "Save the scrolled position of a page (like a bookmark for an article)",
+  "name": "pagemark",
+  "version": "1.0.4",
+  "description": "Save the scrolled position of a page (like a bookmark for a page)",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -12,10 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsejcksn/bookmark-local.git"
+    "url": "git+https://github.com/jsejcksn/pagemark.git"
   },
   "keywords": [
     "bookmark",
+    "page mark",
+    "pagemark",
     "reading",
     "save position",
     "scroll"
@@ -23,9 +25,9 @@
   "author": "Jesse Jackson <npm@jcksn.org> (http://jcksn.org)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jsejcksn/bookmark-local/issues"
+    "url": "https://github.com/jsejcksn/pagemark/issues"
   },
-  "homepage": "https://github.com/jsejcksn/bookmark-local#readme",
+  "homepage": "https://github.com/jsejcksn/pagemark#readme",
   "devDependencies": {
     "@jsejcksn/eslint-config": "^1.0.0",
     "eslint": "^3.9.1"
