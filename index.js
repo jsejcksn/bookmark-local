@@ -4,7 +4,9 @@ const pagemark = (() => {
   let pagemark = {
     pages: []
   };
+
   init();
+  window.addEventListener('beforeunload', setPagemark);
   getPagemark();
 
   // Scroll to saved position if possible
@@ -18,13 +20,12 @@ const pagemark = (() => {
     }
   }
 
-  // Retrieve pagemark from localStorage; add event listener
+  // Retrieve pagemark from localStorage
   function init () {
     const storage = localStorage.getItem('pagemark');
     if (storage !== null && typeof storage !== 'undefined' && storage !== '') { // localStorage key exists and not empty
       pagemark = JSON.parse(storage);
     }
-    window.addEventListener('scroll', setPagemark);
   }
 
   // Save scrolled posiiton
