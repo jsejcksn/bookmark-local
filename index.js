@@ -67,6 +67,7 @@ const pagemark = (() => {
   // --- Expose ---
 
   return {
+    data: pagemark,
     get: getPagemark,
     set: setPagemark
   };
