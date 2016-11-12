@@ -6,8 +6,15 @@ const pagemark = (() => {
   };
 
   init();
-  window.addEventListener('beforeunload', setPagemark);
   getPagemark();
+
+
+  // --- Event listeners ---
+
+  window.addEventListener('beforeunload', setPagemark);
+
+
+  // --- Functions ---
 
   // Scroll to saved position if possible
   function getPagemark () {
@@ -20,12 +27,19 @@ const pagemark = (() => {
     }
   }
 
-  // Retrieve pagemark from localStorage
+  // Attempt to retrieve pagemark from localStorage; return true if found and false otherwise
   function init () {
     const storage = localStorage.getItem('pagemark');
     if (storage !== null && typeof storage !== 'undefined' && storage !== '') { // localStorage key exists and not empty
       pagemark = JSON.parse(storage);
+      for (let i = 0; i < pagemark.pages.length; i++) {
+        if (pagemark.pages[i].url === window.location.href) {
+          return true;
+        }
+      }
+      return false;
     }
+    return false;
   }
 
   // Save scrolled posiiton
@@ -49,8 +63,12 @@ const pagemark = (() => {
     localStorage.setItem('pagemark', JSON.stringify(pagemark));
   }
 
+
+  // --- Expose ---
+
   return {
-    get: getPagemark
+    get: getPagemark,
+    set: setPagemark
   };
 
 })();
