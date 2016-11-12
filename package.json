@@ -1,6 +1,6 @@
 {
   "name": "pagemark",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Save the scrolled position of a page (like a bookmark for a page)",
   "main": "index.js",
   "scripts": {
